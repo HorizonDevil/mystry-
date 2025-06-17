@@ -9,7 +9,7 @@ const Hero = () => {
   const [currentLine, setCurrentLine] = useState(0);
   
   const codeLines = [
-    "const researcher =  'Abhishek Jana',",
+    "const researcher =  'Ankusha Mukherjee',",
     "  role: 'Biotechnology Researcher',",
     "  researchFocus: ['Molecular Docking', 'Drug Discovery', 'Phytochemical Analysis'],",
     "  tools: ['AutoDock Vina', 'HPLC', 'RT-PCR'],",

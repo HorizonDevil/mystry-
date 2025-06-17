@@ -5,111 +5,73 @@ import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const projectCategories = [
-  { id: 'all', label: 'All Projects' },
-  { id: 'web', label: 'Web Development' },
-  { id: 'iot', label: 'IoT Projects' },
-  { id: 'ecommerce', label: 'E-Commerce' },
-  { id: 'data', label: 'Data Processing' }
+  { id: 'all', label: 'All Research Work' },
+  { id: 'biotech', label: 'Biotechnology Research' },
+  { id: 'bioinformatics', label: 'Bioinformatics' },
+  { id: 'cancer_research', label: 'Cancer Research' },
+  { id: 'biochemical', label: 'Biochemical Profiling' }
 ];
 
 const projects = [
   {
     id: 1,
-    title: 'Jail Luxury Ecommerce Platform',
-    date: 'Mar 2025',
-    description: 'Developed a full-stack e-commerce platform with React, Next.js, Node.js, Express, and Sequelize. Implemented user authentication, product management, cart functionality, order processing, RazorPay payment gateway, and wishlist functionality.',
-    longDescription: 'This project involved building a complete e-commerce solution from scratch. The platform features a responsive frontend built with React and Next.js, a RESTful API backend with Node.js and Express, and a MySQL database managed with Sequelize ORM. Key features include JWT authentication, product search and filtering, cart persistence, order tracking, and integration with RazorPay for secure payments. The admin dashboard allows for inventory management, order processing, and sales analytics.',
-    technologies: ['React', 'Next.js', 'Node.js', 'Express', 'Sequelize', 'MySQL', 'RazorPay'],
-    category: 'ecommerce',
+    title: 'Intern, Department of Microbiology',
+    date: 'April 2025 – Present',
+    description: 'Engaged in biochemical characterization of tea metabolites and studied the therapeutic potential of Indian beverages like tea and coffee.',
+    longDescription: 'This research project involves performing DNA and protein extraction from different tea leaf varieties, along with protein estimation. The project uses HPLC, Rheometer, FTIR, and Fluorimeter for comprehensive biochemical profiling. The focus is also on evaluating antimicrobial activity of tea extracts against selected microbial strains.',
+    technologies: ['HPLC', 'Rheometer', 'FTIR', 'Fluorimeter', 'Tea Extracts'],
+    category: 'biochemical',
     links: {
-      demo: 'https://jail-luxruy-next-app.vercel.app/',
-      github: 'https://github.com/HorizonDevil/Jail-Luxuary-Frontend'
+      demo: '#',
+      github: '#'
     },
-    icon: <ShoppingCart />,
     accentColor: '#FF6B6B',
     images: ['/project1-1.jpg', '/project1-2.jpg']
   },
   {
     id: 2,
-    title: 'Under Water Torpedo Detection',
-    date: 'Sept 2024',
-    description: 'Developed a real-time torpedo detection system using React, Node.js, Express, Embedded C++, Arduino, and ESP8266. Integrated ultrasonic sensors with Arduino to detect underwater objects and transmit data wirelessly.',
-    longDescription: 'This IoT project combines hardware and software to create a torpedo detection system. The hardware consists of Arduino boards with ultrasonic sensors submerged underwater, communicating via ESP8266 WiFi modules. The web dashboard, built with React, displays real-time sensor data and alerts. The Node.js backend processes the data and triggers alarms when objects are detected within a certain range. The system was tested in controlled underwater environments with promising detection accuracy.',
-    technologies: ['React', 'Node.js', 'Express', 'C++', 'Arduino', 'ESP8266'],
-    category: 'iot',
+    title: 'Dissertation Trainee, Department of Microbiology',
+    date: 'January 2025 – May 2025',
+    description: 'Designed and implemented a bioinformatics pipeline to inhibitors for Mycobacterium tuberculosis and Klebsiella pneumoniae.',
+    longDescription: 'This project involved performing comparative molecular docking analysis to identify potential inhibitors for Mycobacterium tuberculosis and Klebsiella pneumoniae. Integrated literature mining with computational screening to shortlist promising lead compounds for further testing.',
+    technologies: ['Bioinformatics', 'Molecular Docking', 'Computational Screening'],
+    category: 'bioinformatics',
     links: {
       demo: '#',
       github: '#'
     },
-    icon: <Sensors />,
     accentColor: '#4ECDC4',
     images: ['/project2-1.jpg', '/project2-2.jpg']
   },
   {
     id: 3,
-    title: 'Addlens Website',
-    date: 'Jan 2024',
-    description: 'Developed a responsive company website using HTML, CSS, JavaScript, and PHP. Designed interactive UI/UX for showcasing company information and services with a PHP backend contact form.',
-    longDescription: 'A responsive marketing website for Addlens, featuring modern design principles and smooth animations. The frontend was built with vanilla JavaScript, CSS3 animations, and responsive layouts. The PHP backend handles form submissions and includes basic security measures against spam. The site features a CMS-like admin panel for content updates without code changes. Performance optimizations resulted in 95+ Lighthouse scores across all metrics.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'PHP'],
-    category: 'web',
+    title: 'Intern, TiMBR-TTCRC',
+    date: 'January 2025 – March 2025',
+    description: 'Interned under TIMBR program, handling biospecimens including plasma, DNA, RNA, and cryopreserved samples of Pediatric and Adult Leukemia samples at Tata Medical Center.',
+    longDescription: 'Worked with the TiMBR program at Tata Medical Center, managing biospecimens including plasma, DNA, RNA, and cryopreserved samples from Pediatric and Adult Leukemia patients. Coordinated biorepository workflows and documented downstream procedures.',
+    technologies: ['Biorepository Management', 'LabVantage', 'Leukemia Research'],
+    category: 'cancer_research',
     links: {
       demo: '#',
       github: '#'
     },
-    icon: <Code />,
     accentColor: '#FFD166',
     images: ['/project3-1.jpg']
   },
   {
     id: 4,
-    title: 'Smart Contract Signer',
-    date: 'Ongoing',
-    description: 'Developed a PDF form builder with dynamic field creation and template management. Integrated PDF.js for rendering and jsPDF + HTML2Canvas for exporting filled forms as downloadable PDFs.',
-    longDescription: 'A document management system that allows users to create, sign, and manage smart contracts. The platform features a drag-and-drop form builder, template system, and digital signature capabilities. PDF.js renders documents in the browser, while jsPDF and HTML2Canvas handle PDF generation. The backend uses Node.js with MongoDB for document storage and user management.',
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'PDF.js', 'jsPDF'],
-    category: 'web',
-    links: {
-      demo: 'https://drive.google.com/file/d/19VAAt_xBJVtncUv9wQfjvxywToj4ZRlx/view?usp=sharing',
-      github: 'https://github.com/HorizonDevil/Smart-Contract-Signer'
-    },
-    icon: <Description />,
-    accentColor: '#06D6A0',
-    images: ['/project4-1.jpg', '/project4-2.jpg', '/project4-3.jpg']
-  },
-  {
-    id: 5,
-    title: 'Real-Time Data Processing Using Kafka',
-    date: 'Jan 2024',
-    description: 'Constructed a real-time data processing system using Kafka and Node.js, enabling processing of over 10,000 train activation events per hour and improving response time by 30%.',
-    longDescription: 'Developed a high-performance data processing pipeline using Apache Kafka and Node.js. The system processes over 10,000 train activation events per hour with a 35% reduction in data latency compared to batch processing. Created interactive visualization tools with React and Chart.js for real-time monitoring, reducing issue detection time by 6 hours weekly. Optimized MySQL queries through indexing and JOIN optimizations, achieving 2x faster analytics response times. Refactored API endpoints to reduce response times by 60%, supporting 50+ daily active users with low-latency interactions.',
-    technologies: ['Kafka', 'Node.js', 'React', 'Chart.js', 'MySQL', 'REST API'],
-    category: 'data',
+    title: 'Short Term Intern/Trainee',
+    date: 'July 2025 – September 2025',
+    description: 'Investigated anti-cancer effects of Lepidium sativum seed extracts on MDA-MB-231 breast cancer cells.',
+    longDescription: 'Conducted cell viability and anti-proliferative assays in an ex vivo 3D culture model to study the anti-cancer effects of Lepidium sativum seed extracts on MDA-MB-231 breast cancer cells. Evaluated sequentially extracted bioactive compounds to assess therapeutic potential.',
+    technologies: ['Cancer Research', 'Cell Viability Assays', '3D Culture Model'],
+    category: 'cancer_research',
     links: {
       demo: '#',
       github: '#'
-      
     },
-    icon: <DataArray />,
-    accentColor: '#A78BFA',
-    images: ['/project5-1.jpg', '/project5-2.jpg']
-  },
-  {
-    id: 6,
-    title: 'Personal Portfolio Website',
-    date: 'May 2025',
-    description: 'Designed and developed a dynamic personal portfolio website using React, Node.js, JavaScript, and Framer Motion. Showcases projects, skills, and contact information with responsive design and smooth animations.',
-    longDescription: 'This project is a modern developer portfolio built using React for the frontend and Node.js for basic backend functionality. It includes sections like Hero, About, Projects, Skills, and Contact. Framer Motion is used extensively for animations, providing smooth transitions and interactive effects. The design is fully responsive, ensuring optimal viewing across devices. The portfolio also features a custom-built typing animation, theme-aware styling, and interactive project modals.',
-    technologies: ['React', 'Node.js', 'JavaScript', 'Framer Motion', 'MUI'],
-    category: 'portfolio',
-    links: {
-      demo: '#',
-      github: 'https://github.com/HorizonDevil/MyPortfolio'
-      
-    },
-    icon: <Code />,
-    accentColor: '#7F5AF0',
-    images: ['/portfolio1.jpg', '/portfolio2.jpg']
+    accentColor: '#06D6A0',
+    images: ['/project4-1.jpg', '/project4-2.jpg', '/project4-3.jpg']
   }
 ];
 
@@ -275,38 +237,9 @@ const ProjectCard = ({ project, theme, openModal }) => {
           pb: 3,
           pt: 0
         }}>
-          <Button 
-            variant="outlined"
-            size="medium"
-            href={project.links.demo}
-            target="_blank"
-            onClick={(e) => e.stopPropagation()}
-            startIcon={<Visibility />}
-            sx={{ 
-              color: project.accentColor,
-              borderColor: `${project.accentColor}80`,
-              '&:hover': {
-                borderColor: project.accentColor,
-                backgroundColor: `${project.accentColor}10`
-              }
-            }}
-          >
-            Live Demo
-          </Button>
-          <Button 
-            variant="text"
-            size="medium"
-            href={project.links.github}
-            target="_blank"
-            onClick={(e) => e.stopPropagation()}
-            startIcon={<GitHub />}
-            sx={{ 
-              color: 'text.secondary',
-              ml: 1
-            }}
-          >
-            Code
-          </Button>
+          
+        
+         
         </CardActions>
       </Card>
     </motion.div>
@@ -515,29 +448,8 @@ const ProjectModal = ({ project, open, onClose }) => {
         </Button>
         
         <Box sx={{ display: 'flex', gap: 1 }}>
-          <Button 
-            variant="contained"
-            href={project.links.demo}
-            target="_blank"
-            startIcon={<Visibility />}
-            sx={{ 
-              bgcolor: project.accentColor,
-              color: '#fff',
-              '&:hover': {
-                bgcolor: `${project.accentColor}90`
-              }
-            }}
-          >
-            Live Demo
-          </Button>
-          <Button 
-            variant="outlined"
-            href={project.links.github}
-            target="_blank"
-            startIcon={<GitHub />}
-          >
-            View Code
-          </Button>
+          
+         
         </Box>
       </DialogActions>
     </Dialog>
@@ -629,7 +541,7 @@ const Projects = () => {
                 }
               }}
             >
-              My Projects
+             My Research Experience
             </Typography>
             <Typography 
               variant="subtitle1" 
@@ -641,7 +553,7 @@ const Projects = () => {
                 color: 'text.secondary'
               }}
             >
-              A collection of my most significant projects showcasing my full-stack development capabilities
+              A collection of my most significant research work showcasing my interest towards the field
             </Typography>
           </motion.div>
 
@@ -690,7 +602,7 @@ const Projects = () => {
 
           {/* All Projects */}
           <Typography variant="h5" component="h3" sx={{ mb: 3, fontWeight: 700 }}>
-            {selectedCategory === 'all' ? 'All Projects' : projectCategories.find(c => c.id === selectedCategory)?.label}
+            {selectedCategory === 'all' ? 'All Research Work' : projectCategories.find(c => c.id === selectedCategory)?.label}
           </Typography>
           
           {filteredProjects.length > 0 ? (
@@ -714,24 +626,7 @@ const Projects = () => {
             variants={itemVariants}
             style={{ textAlign: 'center', marginTop: '40px' }}
           >
-            <Button 
-              variant="contained"
-              size="large"
-              sx={{
-                background: `linear-gradient(90deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
-                color: '#fff',
-                px: 4,
-                py: 1.5,
-                borderRadius: '12px',
-                fontWeight: 600,
-                '&:hover': {
-                  transform: 'translateY(-2px)',
-                  boxShadow: theme.shadows[6]
-                }
-              }}
-            >
-              View All Projects
-            </Button>
+            
           </motion.div>
         </motion.div>
       </Container>

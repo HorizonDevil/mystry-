@@ -179,7 +179,7 @@ const Contact = () => {
                   </GlowButton>
                   <GlowButton 
                     startIcon={<FileDownload />}
-                    onClick={() => window.open('/Abhishek Jana Frontend Developer.pdf', '_blank')}
+                    onClick={() => window.open('/Ankusha Mukherjee Resume 2025.pdf', '_blank')}
                     sx={{
                       '&:before': {
                         background: `linear-gradient(45deg, ${theme.palette.secondary?.main || '#6e48aa'}, ${theme.palette.success.main || '#4caf50'})`,
@@ -222,11 +222,11 @@ const Contact = () => {
                   <Box>
                     <Typography variant="subtitle2" color="text.secondary">Email</Typography>
                     <Link
-  href="mailto:abhishekjana.2507@gmail.com"
+  href="mailto:ankushamukherjee55@gmail.com"
   underline="hover"
   sx={{ fontWeight: 500, color: 'inherit', '&:hover': { color: 'primary.main' } }}
 >
-  Abhishek Jana
+  Ankusha Mukherjee
 </Link>
                   </Box>
                 </Box>
@@ -248,7 +248,7 @@ const Contact = () => {
                   <Box>
                     <Typography variant="subtitle2" color="text.secondary">Phone</Typography>
                     <Typography variant="body1" fontWeight={500}>
-                      +91 8478909683
+                      +91 96740 66495
                     </Typography>
                   </Box>
                 </Box>
@@ -292,7 +292,7 @@ const Contact = () => {
                   <Box>
                     <Typography variant="subtitle2" color="text.secondary">LinkedIn</Typography>
                     <Link 
-                      href="www.linkedin.com/in/abhishek-jana-49513822a" 
+                      href="https://www.linkedin.com/in/ankusha-mukherjee-a160b72ab/" 
                       target="_blank"
                       underline="hover"
                       sx={{ 
@@ -303,14 +303,14 @@ const Contact = () => {
                         }
                       }}
                     >
-                      Abhishek Jana
+                      Ankusha Mukherjee
                     </Link>
                   </Box>
                 </Box>
                 
                 <Box sx={{ mt: 'auto', pt: 3 }}>
                   <Typography variant="body1" sx={{ mb: 2, lineHeight: 1.7 }}>
-                    I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+                   I am always open to exploring new research opportunities, creative ideas, and ways to contribute to your vision.
                   </Typography>
                   <Typography variant="body1" sx={{ lineHeight: 1.7 }}>
                     Feel free to reach out through any of the channels above. I'll get back to you as soon as possible!

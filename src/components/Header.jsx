@@ -27,7 +27,7 @@ const Header = ({ mode, setMode }) => {
     <header className={`header ${scrolled ? 'scrolled' : ''} ${mode}`}>
       <div className="header-container">
         <div className="logo" onClick={() => scrollTo('home')}>
-          <span className="logo-text">ABHISHEK JANA</span>
+          <span className="logo-text">ANKUSHA MUKHERJEE</span>
           <span className="logo-dot"></span>
         </div>
 

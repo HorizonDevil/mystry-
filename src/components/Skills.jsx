@@ -52,187 +52,181 @@ ChartJS.register(RadialLinearScale, BarElement, CategoryScale, LinearScale, Poin
 
 const skillsData = [
   { 
-    name: 'JavaScript', 
+    name: 'RNA/DNA Extraction', 
     level: 90, 
-    category: 'language', 
+    category: 'technical', 
     favorite: true, 
-    icon: 'JS', 
-    since: 2018,
-    projects: 25,
-    lastUsed: '2023',
-    expertise: ['ES6+', 'Async Programming', 'Functional Programming', 'DOM Manipulation'],
-    certifications: ['JavaScript Algorithms and Data Structures (freeCodeCamp)']
-  },
-  { 
-    name: 'React.js', 
-    level: 85, 
-    category: 'framework', 
-    favorite: true, 
-    icon: 'R', 
-    since: 2019,
-    projects: 18,
-    lastUsed: '2023',
-    expertise: ['Hooks', 'Context API', 'Performance Optimization', 'Component Lifecycle'],
-    certifications: ['Front End Libraries (freeCodeCamp)']
-  },
-  { 
-    name: 'Node.js', 
-    level: 80, 
-    category: 'runtime', 
-    favorite: true, 
-    icon: 'N', 
-    since: 2019,
-    projects: 12,
-    lastUsed: '2023',
-    expertise: ['REST APIs', 'Middleware', 'Error Handling', 'File System'],
-    certifications: []
-  },
- 
-  { 
-    name: 'HTML/CSS', 
-    level: 95, 
-    category: 'language', 
-    favorite: true, 
-    icon: 'HC', 
-    since: 2018,
-    projects: 30,
-    lastUsed: '2023',
-    expertise: ['Semantic HTML', 'CSS Grid', 'Flexbox', 'Responsive Design'],
-    certifications: ['Responsive Web Design (freeCodeCamp)']
-  },
-  { 
-    name: 'Material UI', 
-    level: 85, 
-    category: 'library', 
-    icon: 'M', 
-    since: 2020,
-    projects: 15,
-    lastUsed: '2023',
-    expertise: ['Theme Customization', 'Component Overrides', 'Responsive Layouts', 'Dark Mode'],
-    certifications: []
-  },
-  { 
-    name: 'Git/GitHub', 
-    level: 90, 
-    category: 'tool', 
-    favorite: true, 
-    icon: 'G', 
-    since: 2018,
-    projects: 40,
-    lastUsed: '2023',
-    expertise: ['Branching Strategies', 'Pull Requests', 'Rebasing', 'CI/CD Integration'],
-    certifications: []
-  },
-  { 
-    name: 'MongoDB', 
-    level: 70, 
-    category: 'database', 
-    icon: 'M', 
-    since: 2020,
-    projects: 5,
-    lastUsed: '2022',
-    expertise: ['Schema Design', 'Query Optimization', 'Indexing', 'Joins'],
-    certifications: []
-  },
-  {
-    name: 'C++',
-    level: 80,
-    category: 'language',
-    icon: 'C++',
-    since: 2020,
-    projects: 0,
-    lastUsed: '2025',
-    expertise: ['Object-Oriented Programming', 'Memory Management', 'STL', 'Multithreading'],
-    certifications: []
-  },
-  {
-    name: 'Java',
-    level: 75,
-    category: 'language',
-    icon: 'J',
+    icon: 'R/D', 
     since: 2021,
-    projects: 0,
-    lastUsed: '2024',
-    expertise: ['OOP', 'Spring Boot Basics', 'Multithreading', 'Exception Handling'],
-    certifications: []
+    projects: 5,
+    lastUsed: '2025',
+    expertise: ['Sample Preparation', 'RNA/DNA Purification', 'Quantification Techniques'],
+    certifications: ['Basic Laboratory Techniques']
   },
-  {
-    name: 'Tableau',
-    level: 85,
-    category: 'data-visualization',
-    icon: 'T',
+  { 
+    name: 'RT-PCR', 
+    level: 85, 
+    category: 'technical', 
+    favorite: true, 
+    icon: 'RT', 
     since: 2022,
-    projects: 5,
+    projects: 4,
     lastUsed: '2025',
-    expertise: ['Dashboard Design', 'Data Blending', 'Calculated Fields', 'Interactive Filters'],
-    certifications: []
+    expertise: ['Polymerase Chain Reaction', 'Gene Expression Analysis', 'Quantitative PCR'],
+    certifications: ['PCR Techniques for Molecular Biology']
   },
-  {
-    name: 'Excel',
-    level: 80,
-    category: 'data-analysis',
-    icon: 'E',
-    since: 2021,
-    projects: 6,
+  { 
+    name: 'SDS-PAGE', 
+    level: 80, 
+    category: 'technical', 
+    favorite: true, 
+    icon: 'SDS', 
+    since: 2022,
+    projects: 3,
     lastUsed: '2025',
-    expertise: ['Pivot Tables', 'VLOOKUP & XLOOKUP', 'Conditional Formatting', 'Macros'],
-    certifications: []
+    expertise: ['Protein Separation', 'Molecular Weight Estimation', 'Gel Electrophoresis'],
+    certifications: ['Protein Analysis Methods']
   },
-  {
-    name: 'Scala',
-    level: 70,
-    category: 'language',
-    icon: 'S',
+  { 
+    name: 'HPLC', 
+    level: 85, 
+    category: 'technical', 
+    icon: 'HPLC', 
+    since: 2022,
+    projects: 3,
+    lastUsed: '2025',
+    expertise: ['High-Performance Liquid Chromatography', 'Analyzing Metabolites', 'Purity Assessment'],
+    certifications: ['Advanced Chromatography Techniques']
+  },
+  { 
+    name: 'FTIR', 
+    level: 80, 
+    category: 'technical', 
+    icon: 'FTIR', 
     since: 2023,
     projects: 2,
     lastUsed: '2025',
-    expertise: ['Functional Programming', 'Akka Basics', 'Pattern Matching', 'JVM Integration'],
+    expertise: ['Fourier-Transform Infrared Spectroscopy', 'Material Characterization', 'Spectral Analysis'],
     certifications: []
   },
-  {
-    name: 'Kafka.js',
-    level: 85,
-    category: 'streaming',
-    icon: 'K',
+  { 
+    name: 'Rheometer', 
+    level: 75, 
+    category: 'technical', 
+    icon: 'Rm', 
+    since: 2023,
+    projects: 2,
+    lastUsed: '2025',
+    expertise: ['Rheological Testing', 'Viscosity Measurement', 'Flow Behavior Analysis'],
+    certifications: []
+  },
+  { 
+    name: 'Fluorimeter', 
+    level: 80, 
+    category: 'technical', 
+    icon: 'Fl', 
+    since: 2023,
+    projects: 2,
+    lastUsed: '2025',
+    expertise: ['Fluorescence Spectroscopy', 'Molecular Interaction Studies', 'Quantitative Analysis'],
+    certifications: []
+  },
+  { 
+    name: 'AutoDock Vina', 
+    level: 85, 
+    category: 'software', 
+    favorite: true, 
+    icon: 'AD', 
+    since: 2023,
+    projects: 2,
+    lastUsed: '2025',
+    expertise: ['Molecular Docking', 'Protein-Ligand Interactions', 'Drug Discovery'],
+    certifications: ['Molecular Modeling and Simulations']
+  },
+  { 
+    name: 'MS Excel', 
+    level: 90, 
+    category: 'software', 
+    icon: 'E', 
+    since: 2021,
+    projects: 6,
+    lastUsed: '2025',
+    expertise: ['Data Analysis', 'Pivot Tables', 'Charts and Graphs', 'Macros'],
+    certifications: []
+  },
+  { 
+    name: 'LabVantage', 
+    level: 80, 
+    category: 'software', 
+    icon: 'Lv', 
     since: 2023,
     projects: 3,
     lastUsed: '2025',
-    expertise: ['Producer/Consumer Setup', 'Real-time Event Processing', 'Topic Partitioning', 'Kafka with Node.js'],
+    expertise: ['Lab Information Management System', 'Sample Tracking', 'Data Integrity'],
     certifications: []
   },
   { 
-    name: 'MySQL', 
-    level: 80, 
-    category: 'database', 
-    icon: 'M', 
-    since: 2019,
+    name: 'Time Management', 
+    level: 90, 
+    category: 'soft-skills', 
+    icon: 'TM', 
+    since: 2020,
     projects: 10,
-    lastUsed: '2023',
-    expertise: ['Schema Design', 'Query Optimization', 'Indexing', 'Joins'],
+    lastUsed: '2025',
+    expertise: ['Task Prioritization', 'Meeting Deadlines', 'Scheduling'],
     certifications: []
   },
   { 
-    name: 'REST API', 
+    name: 'Teamwork', 
+    level: 95, 
+    category: 'soft-skills', 
+    icon: 'T', 
+    since: 2020,
+    projects: 12,
+    lastUsed: '2025',
+    expertise: ['Collaborative Work', 'Conflict Resolution', 'Cross-functional Collaboration'],
+    certifications: []
+  },
+  { 
+    name: 'Presentation', 
     level: 85, 
-    category: 'service', 
-    favorite: true, 
-    icon: 'R', 
-    since: 2019,
-    projects: 15,
-    lastUsed: '2023',
-    expertise: ['Endpoint Design', 'Authentication', 'Rate Limiting', 'Documentation'],
+    category: 'soft-skills', 
+    icon: 'P', 
+    since: 2021,
+    projects: 7,
+    lastUsed: '2025',
+    expertise: ['Public Speaking', 'Visual Design', 'Engagement Techniques'],
+    certifications: []
+  },
+  { 
+    name: 'Documentation', 
+    level: 90, 
+    category: 'soft-skills', 
+    icon: 'D', 
+    since: 2020,
+    projects: 8,
+    lastUsed: '2025',
+    expertise: ['Technical Writing', 'Report Generation', 'Document Control'],
+    certifications: []
+  },
+  { 
+    name: 'Multitasking', 
+    level: 80, 
+    category: 'soft-skills', 
+    icon: 'M', 
+    since: 2020,
+    projects: 6,
+    lastUsed: '2025',
+    expertise: ['Task Management', 'Simultaneous Projects', 'Handling Multiple Deadlines'],
     certifications: []
   },
 ];
 
 const categories = [
   { name: 'All', value: 'all', icon: '🧰' },
-  { name: 'Languages', value: 'language', icon: '💻' },
-  { name: 'Frameworks', value: 'framework', icon: '🛠️' },
-  { name: 'Libraries', value: 'library', icon: '📚' },
-  { name: 'Databases', value: 'database', icon: '🗄️' },
-  { name: 'Tools', value: 'tool', icon: '🔧' },
-  { name: 'Services', value: 'service', icon: '🌐' },
+  { name: 'Technical Skills', value: 'technical', icon: '🔬' },
+  { name: 'Software', value: 'software', icon: '💻' },
+  { name: 'Soft Skills', value: 'soft-skills', icon: '🧠' }
 ];
 
 const proficiencyLevels = [
@@ -244,29 +238,26 @@ const proficiencyLevels = [
 
 const generateSkillDescription = (skill) => {
   const descriptions = {
-    'JavaScript': 'Extensive experience building interactive web applications and implementing modern ES6+ features.',
-    'React.js': 'Proficient in building component-based UIs, hooks, context API, and performance optimization.',
-    'Node.js': 'Experience in building server-side applications, REST APIs, and working with various Node frameworks.',
-    'Kafka.js': 'A modern Kafka client for Node.js enabling real-time event streaming and scalable data pipelines.',
-    'MongoDB': 'A flexible NoSQL database for high-performance applications with dynamic schema and powerful querying.',
-    'HTML/CSS': 'Semantic HTML and modern CSS techniques including Flexbox, Grid, and responsive design.',
-    'Material UI': 'Implemented design systems and custom themes for consistent UI across applications.',
-    'Git/GitHub': 'Version control and collaborative development workflows including branching strategies.',
-    'C++': 'High-performance programming language used for systems development, real-time applications, and embedded systems.',
-
-    'Java': 'Object-oriented language widely used for building cross-platform enterprise applications and backend systems.',
-
-    'Tableau': 'Powerful data visualization tool for creating interactive dashboards and uncovering business insights.',
-
-    'Excel': 'Versatile spreadsheet software for data analysis, automation, and reporting using formulas and pivot tables.',
-
-    'Scala': 'Functional and object-oriented language built on the JVM, ideal for scalable data processing and backend systems.',
-    'MySQL': 'Designed and optimized relational database schemas and complex queries.',
-    'REST API': 'Designed and consumed RESTful APIs with proper authentication and documentation.',
+    'RNA/DNA Extraction': 'Proficient in extracting RNA and DNA from various biological samples, with an understanding of purification and quantification techniques.',
+    'RT-PCR': 'Skilled in performing Reverse Transcription Polymerase Chain Reaction (RT-PCR) for gene expression analysis.',
+    'SDS-PAGE': 'Experienced in using SDS-PAGE for protein separation and molecular weight determination.',
+    'HPLC': 'Knowledgeable in High-Performance Liquid Chromatography for the analysis of metabolites and compounds.',
+    'FTIR': 'Proficient in Fourier-Transform Infrared Spectroscopy for analyzing molecular structures.',
+    'Rheometer': 'Experienced in using rheometers to measure viscosity and analyze flow behavior in materials.',
+    'Fluorimeter': 'Skilled in using fluorimeters for fluorescence spectroscopy and molecular interaction studies.',
+    'AutoDock Vina': 'Experienced in using AutoDock Vina for molecular docking and predicting protein-ligand interactions.',
+    'MS Excel': 'Advanced skills in MS Excel, including pivot tables, data analysis, and automation via macros.',
+    'LabVantage': 'Skilled in using LabVantage for managing laboratory data, sample tracking, and ensuring data integrity.',
+    'Time Management': 'Effective in prioritizing tasks, managing schedules, and meeting deadlines.',
+    'Teamwork': 'Strong ability to collaborate and work in teams to achieve common goals.',
+    'Presentation': 'Skilled in delivering clear and engaging presentations, with expertise in visual design and public speaking.',
+    'Documentation': 'Proficient in preparing detailed documentation, technical reports, and managing documents.',
+    'Multitasking': 'Capable of managing multiple tasks simultaneously while maintaining quality and meeting deadlines.'
   };
   
   return descriptions[skill.name] || `Proficient in ${skill.name} with ${skill.level}% confidence based on project experience.`;
 };
+
 
 const SkillDetailDialog = ({ skill, open, onClose, toggleFavorite }) => {
   const [tabValue, setTabValue] = useState(0);
@@ -909,7 +900,7 @@ const Skills = () => {
                 position: 'relative'
               }}
             >
-              Technologies I've mastered and tools I use daily to build exceptional digital experiences
+             Skills that I have mastered through years of continuous learning.
             </Typography>
           </Box>
         </motion.div>

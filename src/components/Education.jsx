@@ -13,56 +13,78 @@ import {
 
 const education = [
   {
-    degree: 'Bachelor of Technology | Computer Science',
-    institution: 'Lovely Professional University',
-    specialization: 'Specialization in Data Science',
-    duration: '2022 - 2025',
+    degree: 'Master of Science | Biotechnology',
+    institution: 'Amity University Mumbai',
+    specialization: 'Specialization in Biotechnology',
+    duration: '2023 - 2025',
     icon: <DataObject fontSize="small" />,
-    skills: ['Machine Learning', 'Big Data', 'Cloud Computing', 'AI'],
-    highlights: []
+    skills: ['Molecular Biology', 'Bioinformatics', 'Genomics', 'Biotechnology Research'],
+    highlights: ['Current CGPA: 8.53', '(SGPA: 8.71)']
   },
   {
-    degree: 'Diploma | Computer Science',
-    institution: 'Lovely Professional University',
+    degree: 'Bachelor of Science | Biotechnology',
+    institution: 'Swami Vivekananda Institute of Modern Science, Kolkata',
     specialization: '',
-    duration: '2019 - 2022',
+    duration: '2018 - 2021',
     icon: <Code fontSize="small" />,
-    skills: ['Algorithms', 'Web Development', 'Database Systems'],
-    highlights: []
+    skills: ['Biochemistry', 'Cell Biology', 'Genetics', 'Biotechnology Applications'],
+    highlights: ['CGPA: 9.23', '(Rank holder in Department)']
   }
 ];
 
 const certifications = [
   {
-    name: 'Blockchain Developer Certification',
-    issuer: 'Coursera',
-    date: '2023',
+    name: 'Covid-19 Vaccine Design',
+    issuer: 'NPTEL – Innovation & Technology for Pandemic Solutions',
+    date: '2020',
     credential: 'Credential ID: XYZ123',
-    skills: ['Solidity', 'Smart Contracts', 'Ethereum'],
-    icon: '/assets/blockchain-icon.svg'
+    skills: ['Vaccine Development', 'Pandemic Solutions', 'Biotech Innovation'],
+    icon: '/assets/vaccine-icon.svg'
   },
   {
-    name: 'Advanced React Specialist',
-    issuer: 'Udemy',
-    date: '2022',
+    name: 'Ethics in Engineering',
+    issuer: 'NPTEL – Integrity and Societal Responsibility',
+    date: '2019',
     credential: 'Credential ID: ABC456',
-    skills: ['Hooks', 'Context API', 'Performance Optimization'],
-    icon: '/assets/react-icon.svg'
+    skills: ['Ethics', 'Engineering Integrity', 'Societal Responsibility'],
+    icon: '/assets/ethics-icon.svg'
+  },
+  {
+    name: 'Molecular AutoDocking',
+    issuer: 'Introduction to AutoDock4 & CAD',
+    date: 'Oct 2024',
+    credential: 'Credential ID: XYZ789',
+    skills: ['Molecular Docking', 'AutoDock4', 'Computer-Aided Drug Design'],
+    icon: '/assets/autodocking-icon.svg'
+  },
+  {
+    name: 'Heredity Biosciences Webinar',
+    issuer: 'Metal Nanoparticles in Antimicrobial Applications',
+    date: 'Dec 2024',
+    credential: 'Credential ID: DEF123',
+    skills: ['Biosciences', 'Nanoparticles', 'Antimicrobial Research'],
+    icon: '/assets/webinar-icon.svg'
   }
 ];
 
 const achievements = [
   {
-    title: 'Hackathon Champion',
-    description: 'Secured 9th rank among 500+ participants in Ineuron Hackathon',
-    date: '2022',
+    title: 'Poster Making Competition',
+    description: 'The Emerging Virus and its Worldwide Effect, conducted by Dr. T.K Chaudhary',
+    date: '2021',
     icon: <EmojiEvents />
   },
   {
-    title: 'Code Educator in BrightChamps',
-    description: 'Tought coding to 100+ International students in BrightChamps',
-    date: '2022-2023',
+    title: 'Distinction in Lucknow Kathak',
+    description: 'Awarded distinction in Lucknow Kathak with certifications and awards from Kala Sangam Kala Kendra',
+    date: '2021',
     icon: <WorkspacePremium />
+  },
+  {
+    title: 'Transformation of Knowledge into Technology for Human Welfare',
+    description: 'One day seminar by Dr. Prof. N.B. Nath, SVIMS Kolkata',
+    date: '2022',
+    icon: <EmojiEvents />
   }
 ];
 
@@ -200,7 +222,7 @@ const Education = () => {
                   lineHeight: 1.6
                 }}
               >
-                My academic journey and professional milestones that shaped my technical expertise
+                My academic journey and professional milestones that shaped my expertise in this Field
               </Typography>
             </Stack>
           </motion.div>
@@ -310,6 +332,17 @@ const Education = () => {
                             }}
                           >
                             {edu.institution}
+                          </Typography>
+                          <Typography 
+                            variant="subtitle1" 
+                            sx={{ 
+                              fontWeight: 600, 
+                              mb: 1,
+                              color: 'text.secondary',
+                              pl: 4
+                            }}
+                          >
+                            {edu. highlights}
                           </Typography>
                           
                           {edu.specialization && (

@@ -9,11 +9,11 @@ const Hero = () => {
   const [currentLine, setCurrentLine] = useState(0);
   
   const codeLines = [
-    "const developer = {",
-    "  name: 'Abhishek Jana',",
-    "  role: 'Full Stack Developer',",
-    "  skills: ['React', 'Node.js', 'MongoDB'],",
-    "  passion: 'Building digital experiences'",
+    "const researcher =  'Abhishek Jana',",
+    "  role: 'Biotechnology Researcher',",
+    "  researchFocus: ['Molecular Docking', 'Drug Discovery', 'Phytochemical Analysis'],",
+    "  tools: ['AutoDock Vina', 'HPLC', 'RT-PCR'],",
+    "  passion: 'Exploring therapeutic potential of natural compounds for cancer treatment'",
     "};"
   ];
 
@@ -135,41 +135,43 @@ const Hero = () => {
           maxWidth: { xs: '100%', md: '50%' },
         }}
       >
-        <Typography 
-          variant={isMobile ? "h4" : "h3"} 
-          component="h1" 
-          sx={{ 
-            fontWeight: 700, 
-            mb: 2,
-            lineHeight: 1.2,
-          }}
-        >
-          Hi, I'm <span style={{ color: theme.palette.primary.main }}>Abhishek Jana</span>
-        </Typography>
-        
-        <Typography 
-          variant={isMobile ? "h5" : "h4"} 
-          component="h2" 
-          sx={{ 
-            fontWeight: 600, 
-            mb: 2,
-            color: theme.palette.text.secondary,
-          }}
-        >
-          Full Stack Developer
-        </Typography>
-        
-        <Typography 
-          variant="body1" 
-          sx={{ 
-            maxWidth: '600px', 
-            mb: 4,
-            fontSize: isMobile ? '1rem' : '1.1rem',
-            lineHeight: 1.6,
-          }}
-        >
-          I transform ideas into digital reality through clean, efficient code and thoughtful user experiences.
-        </Typography>
+       <Typography 
+  variant={isMobile ? "h4" : "h3"} 
+  component="h1" 
+  sx={{ 
+    fontWeight: 700, 
+    mb: 2,
+    lineHeight: 1.2,
+  }}
+>
+  Hi, I'm <span style={{ color: theme.palette.primary.main }}>Ankusha Mukherjee</span>
+</Typography>
+
+<Typography 
+  variant={isMobile ? "h5" : "h4"} 
+  component="h2" 
+  sx={{ 
+    fontWeight: 600, 
+    mb: 2,
+    color: theme.palette.text.secondary,
+  }}
+>
+  Biotechnology Researcher
+</Typography>
+
+<Typography 
+  variant="body1" 
+  sx={{ 
+    maxWidth: '600px', 
+    mb: 4,
+    fontSize: isMobile ? '1rem' : '1.1rem',
+    lineHeight: 1.6,
+  }}
+>
+  I'm passionate about researching natural compounds and their therapeutic potential. I specialize in molecular docking, 
+  drug discovery, and phytochemical analysis, aiming to contribute to advancements in plant-based wellness.
+</Typography>
+
         
         <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
           <Button 
@@ -196,7 +198,7 @@ const Hero = () => {
               fontWeight: 600,
             }}
           >
-            View Projects
+            View My Research Work
           </Button>
         </Box>
       </motion.div>

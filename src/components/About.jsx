@@ -135,23 +135,25 @@ const About = () => {
               }}
             >
               <Typography variant="h6" component="h3" sx={{ fontWeight: 600, mb: 2 }}>
-                Who am I?
-              </Typography>
-              
-              <Typography variant="body1" sx={{ mb: 3 }}>
-                I'm Abhishek Jana, a passionate Full Stack Developer based in Kolkata, India. 
-                I specialize in building modern web applications using technologies like React, Node.js, and Next.js.
-              </Typography>
-              
-              <Typography variant="body1" sx={{ mb: 3 }}>
-                With expertise in both front-end and back-end development, I create seamless, performant digital 
-                experiences. My background in Data Science allows me to bring data-driven approaches to my projects.
-              </Typography>
-              
-              <Typography variant="body1" sx={{ mb: 3 }}>
-                When I'm not coding, you can find me participating in hackathons (I secured 9th rank in one organized 
-                by Ineuron!), learning new technologies, or contributing to open-source projects.
-              </Typography>
+  Who am I?
+</Typography>
+
+<Typography variant="body1" sx={{ mb: 3 }}>
+  I'm a Biotechnology postgraduate with hands-on experience in phytochemical screening and natural compound research. 
+  My academic training aligns with Forever Living's focus on plant-based wellness, and I aim to contribute to product innovation 
+  and quality through science-driven solutions.
+</Typography>
+
+<Typography variant="body1" sx={{ mb: 3 }}>
+  With expertise in natural compounds and biochemistry, I aim to leverage scientific research to develop products that improve 
+  human health and wellness. My background in biotechnology empowers me to bring data-driven approaches to my work.
+</Typography>
+
+<Typography variant="body1" sx={{ mb: 3 }}>
+  When I'm not researching or experimenting in the lab, I’m committed to supporting company growth in the nutraceutical space, 
+  learning new methodologies, and collaborating on innovative solutions.
+</Typography>
+
               
               <Box 
                 sx={{ 
@@ -162,10 +164,10 @@ const About = () => {
                 }}
               >
                 {[
-                  { label: "Phone", value: "+91 8478909683" },
-                  { label: "Email", value: "abhishekjana.2507@gmail.com" },
+                  { label: "Phone", value: "+91 9674066495" },
+                  { label: "Email", value: "ankushamukherjee55@gmail.com" },
                   { label: "Location", value: "Kolkata, India" },
-                  { label: "Languages", value: "English, Hindi, Bengali" }
+                  { label: "Languages", value: "English, Hindi, Bengali, German(Begineer)" }
                 ].map((item, index) => (
                   <Box
                     component={motion.div}

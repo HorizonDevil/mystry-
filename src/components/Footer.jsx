@@ -32,7 +32,7 @@ const Footer = () => {
       </Typography>
       
       <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-        Made with ❤️ by "Find Me If you Can 😜"
+        Made with ❤️ by Abhishek
       </Typography>
     </Box>
   );
